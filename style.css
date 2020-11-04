@@ -1,0 +1,38 @@
+body{
+    margin:0px;
+    font-family: sans-serif;
+}
+
+#main{
+    background:lightgray;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    ". headerr ."
+    "imagen imagen imagen"
+    ". content .";
+    margin: 25px 10px;
+    border-radius: 1%;
+    grid-row-gap: 35px;
+}
+
+header{
+    grid-area: headerr;
+    justify-self: center;
+    text-align: center;
+    
+}
+
+#imagen{
+    grid-area: imagen;
+    justify-self: center;
+    background: whitesmoke;
+    padding: 0 5px;
+    text-align: center;
+}
+
+#content{
+    grid-area: content;
+    justify-self: center;
+}
